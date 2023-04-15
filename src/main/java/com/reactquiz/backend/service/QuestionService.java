@@ -1,12 +1,11 @@
 package com.reactquiz.backend.service;
 
-import com.reactquiz.backend.model.Question;
-
 import java.util.List;
+import com.reactquiz.backend.model.Questions.QuestionBase;
 
 public interface QuestionService {
 
-    Question addQuestion(Question question);
-    List<Question> getAllQuestions();
+    QuestionBase addQuestion(QuestionBase question);
+    List<QuestionBase> getAllQuestions();
 
 }
