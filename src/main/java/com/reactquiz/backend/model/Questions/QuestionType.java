@@ -1,4 +1,4 @@
-package com.reactquiz.backend.model;
+package com.reactquiz.backend.model.Questions;
 
 public enum QuestionType {
     MULTIPLECHOICE,

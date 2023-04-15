@@ -1,0 +1,21 @@
+/-----------------Adding the db:-------------------------------------/
+
+Using a PostgreSQL 15 db currently with the login creds being:
+port:5432
+login:quiz_user
+pass:frog123
+
+Setup a user "Login/Group Roles"
+Name: quiz_user
+pass:frog123
+
+Privileges:
+Can login: True
+Superuser: True
+Create Roles: True
+Create Databases: True
+Inherit roles from parent roles: True
+Replication and backups: False
+
+To setup within a server create a db called "quiz_app"
+IMPORTANT: Make "quiz_user" the Owner of the db.
