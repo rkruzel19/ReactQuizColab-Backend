@@ -1,4 +1,4 @@
-package com.reactquiz.backend.service;
+package com.reactquiz.backend.service.question;
 
 import com.reactquiz.backend.model.Questions.QuestionBase;
 import com.reactquiz.backend.repository.QuestionRepository;
