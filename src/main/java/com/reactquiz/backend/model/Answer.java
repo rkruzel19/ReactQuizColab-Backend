@@ -7,12 +7,19 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Answer {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     private String answerText;
-    //Should there be an enum to specify Correct/Choice Answers?
+    private long questionId;
+    /**
+     - Should there be an enum to specify Correct/Choice Answers?
+      I think variable holding questionId will do the trick.
+      It links it to that question
+    **/
+
+
     public Answer(){
 
     }
@@ -29,8 +36,15 @@ public class Answer {
         return answerText;
     }
 
-    public void setAnswerTextText(String answerText) {
+    public void setAnswerText(String answerText) {
         this.answerText = answerText;
     }
 
+    public long getQuestionId() {
+        return questionId;
+    }
+
+    public void setQuestionId(long questionId) {
+        this.questionId = questionId;
+    }
 }

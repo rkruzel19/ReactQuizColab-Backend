@@ -1,7 +1,7 @@
 package com.reactquiz.backend.controller;
 
 import com.reactquiz.backend.model.Questions.QuestionBase;
-import com.reactquiz.backend.service.QuestionService;
+import com.reactquiz.backend.service.question.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
