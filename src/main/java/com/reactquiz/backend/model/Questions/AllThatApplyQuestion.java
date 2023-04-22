@@ -1,14 +1,18 @@
 package com.reactquiz.backend.model.Questions;
 
 import com.reactquiz.backend.model.Answer;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 
+@Entity
 public class AllThatApplyQuestion extends QuestionBase{
 
     public AllThatApplyQuestion(){
         super(QuestionType.ALLTHATAPPLY);
     }
-
+    @OneToMany
     private Answer[] correctAnswers;
+    @OneToMany
     private Answer[] choiceAnswers;
     private int optionNumber;
 
@@ -20,11 +24,11 @@ public class AllThatApplyQuestion extends QuestionBase{
         this.correctAnswers = correctAnswer;
     }
 
-    public Answer[] getChoiceAnswer() {
+    public Answer[] getChoiceAnswers() {
         return choiceAnswers;
     }
 
-    public void setChoiceAnswersAnswer(Answer[] correctAnswer) {
+    public void setChoiceAnswers(Answer[] correctAnswer) {
         this.choiceAnswers = choiceAnswers;
     }
 
