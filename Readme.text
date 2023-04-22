@@ -19,3 +19,29 @@ Replication and backups: False
 
 To setup within a server create a db called "quiz_app"
 IMPORTANT: Make "quiz_user" the Owner of the db.
+
+-----------------------------------Requests-------------------------------
+TODO: Maybe could make this a swagger doc?
+
+
+--- Add new question:
+POST: http://localhost:8080/question/add
+
+{
+    "questionText": "What is the capital of France?",
+    "questionType": "ALLTHATAPPLY"
+}
+
+--- Delete a question:
+DELETE: http://localhost:8080/question/delete
+{
+    "id": "1"
+}
+
+--- Update a question:
+POST: http://localhost:8080/question/update
+{
+    "id": "2",
+    "questionText": "What is the capital of Japan?",
+    "questionType": "ALLTHATAPPLY"
+}
