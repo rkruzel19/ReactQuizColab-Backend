@@ -3,7 +3,6 @@ package com.reactquiz.backend.service.question;
 import java.util.List;
 import java.util.Optional;
 
-import com.reactquiz.backend.model.Questions.AllThatApplyQuestion;
 import com.reactquiz.backend.model.Questions.QuestionBase;
 
 public interface QuestionService {

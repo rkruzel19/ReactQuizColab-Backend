@@ -1,7 +1,6 @@
 package com.reactquiz.backend.service.question;
 
 import com.reactquiz.backend.model.Questions.AllThatApplyQuestion;
-import com.reactquiz.backend.model.Questions.QuestionBase;
 import com.reactquiz.backend.repository.questions.ATAQuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

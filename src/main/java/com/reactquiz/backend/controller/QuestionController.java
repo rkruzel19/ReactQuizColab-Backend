@@ -17,6 +17,7 @@ public class QuestionController {
 
     @Autowired
     private QuestionService questionService;
+    @Autowired
     private ATAQuestionService ataQuestionService;
     //region Base question CRUD
     @PostMapping("/add")
